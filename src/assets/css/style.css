@@ -1,0 +1,316 @@
+/* Variáveis CSS */
+:root {
+  --primary: #007bff;
+  --dark: #2a0944;
+  --light: #ffffff;
+  --gray: #f0f0f0;
+  --shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  --transition: all 0.3s ease;
+}
+
+/* Estilos Base */
+body {
+  font-family: 'Poppins', sans-serif;
+  background: var(--light);
+  color: #000;
+}
+
+/* Navbar */
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 10px 0;
+  background: var(--light);
+  z-index: 1000;
+  transition: var(--transition);
+}
+
+.navbar-nav .nav-link {
+  font-size: 18px;
+  font-weight: 500;
+  padding: 8px 15px;
+  color: var(--dark);
+  transition: var(--transition);
+}
+
+.navbar-nav .nav-link:hover {
+  color: var(--primary);
+}
+
+.navbar-toggler {
+  border: none;
+}
+
+/* Hero Section */
+.hero {
+  height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url('../img/hero.png') center/cover no-repeat;
+}
+
+.hero h1,
+.hero p {
+  color: var(--light);
+}
+
+/* Cards */
+.card-img {
+  height: 250px;
+  object-fit: cover;
+}
+
+.card-img-overlay {
+  background: rgba(0, 0, 0, 0.4);
+  border-radius: 20px;
+  transition: var(--transition);
+}
+
+.card:hover .card-img-overlay {
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.btn-outline-light:hover {
+  background: var(--light);
+  color: #000;
+}
+
+/* Etapas */
+.etapas-funerario {
+  background: #0b1d3a;
+}
+
+.etapa {
+  position: relative;
+  padding-bottom: 20px;
+}
+
+.etapa .numero {
+  font-size: 50px;
+  color: #b07b4a;
+  font-weight: 700;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.etapa .numero::after {
+  content: '';
+  position: absolute;
+  width: 100px;
+  height: 2px;
+  background: linear-gradient(to right, #fff 33%, transparent 0%);
+  background-size: 12px 2px;
+  top: 25px;
+  left: 60px;
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .etapa .numero::after {
+    display: none;
+  }
+}
+
+/* Steps */
+.step-circle {
+  width: 50px;
+  height: 50px;
+  background: #333;
+  color: var(--light);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 1.2rem;
+  transition: var(--transition);
+  box-shadow: var(--shadow);
+  border: 3px solid transparent;
+}
+
+.step-circle.active {
+  background: var(--primary);
+  border-color: var(--primary);
+  box-shadow: 0 0 15px rgba(0, 123, 255, 0.7);
+}
+
+.step-line {
+  height: 4px;
+  width: 60px;
+  background: #ccc;
+  border-radius: 2px;
+  transition: var(--transition);
+}
+
+.step-circle.active+.step-line {
+  background: var(--primary);
+}
+
+/* WhatsApp */
+.whatsapp-icon {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  cursor: pointer;
+}
+
+.whatsapp-icon i {
+  color: #25d366;
+}
+
+/* FAQ */
+.faq-item {
+  margin-bottom: 15px;
+  border-bottom: 1px solid #ccc;
+}
+
+.faq-question {
+  width: 100%;
+  background: var(--light);
+  color: #003366;
+  cursor: pointer;
+  padding: 18px;
+  text-align: left;
+  font-size: 16px;
+  border: none;
+  outline: none;
+  transition: var(--transition);
+  position: relative;
+}
+
+.faq-question::after {
+  content: '+';
+  color: #0039b4;
+  font-weight: bold;
+  position: absolute;
+  right: 20px;
+  transition: var(--transition);
+}
+
+.faq-question.active::after {
+  content: '-';
+  transform: rotate(180deg);
+}
+
+.faq-question:hover {
+  background: var(--gray);
+}
+
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  background: var(--light);
+  transition: var(--transition);
+}
+
+.faq-answer p {
+  padding: 0 18px 18px;
+  margin: 0;
+  color: #333;
+  font-size: 15px;
+}
+
+.space {
+  height: 100px;
+}
+
+/* Benefits */
+.benefits-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 30px;
+  max-width: 1300px;
+  margin: auto;
+}
+
+.benefit-item {
+  background: #fafafa;
+  border-radius: 16px;
+  padding: 25px;
+  box-shadow: var(--shadow);
+  text-align: center;
+  transition: var(--transition);
+}
+
+.benefit-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+}
+
+.benefit-item i {
+  font-size: 42px;
+  color: #0077b6;
+  background: #e0f4ff;
+  padding: 16px;
+  border-radius: 50%;
+}
+
+.benefit-text {
+  font-size: 14.5px;
+  color: #333;
+  margin-top: 12px;
+}
+
+.card:hover .saiba-mais-btn {
+  opacity: 1 !important;
+}
+
+.whatsapp-icon {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  cursor: pointer;
+}
+
+.whatsapp-icon i {
+  color: #25d366;
+}
+
+/* Fade in + slide up animation */
+@keyframes fadeSlideUp {
+  0% {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Pulso suave do ícone do escudo */
+@keyframes pulseShield {
+
+  0%,
+  100% {
+    transform: scale(1);
+    filter: drop-shadow(0 0 3px #fbbc04);
+  }
+
+  50% {
+    transform: scale(1.1);
+    filter: drop-shadow(0 0 8px #fbbc04);
+  }
+}
+
+/* Aplicar animação na seção */
+#contrate-agora {
+  animation: fadeSlideUp 1s ease forwards;
+}
+
+/* Pulso no ícone do escudo */
+#contrate-agora .position-absolute>i {
+  animation: pulseShield 2.5s ease-in-out infinite;
+}
+
+/* Efeito hover no botão */
+#contrate-agora .btn-warning {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#contrate-agora .btn-warning:hover,
+#contrate-agora .btn-warning:focus {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px rgba(255, 193, 7, 0.8);
+}
