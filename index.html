@@ -75,7 +75,8 @@
         integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./src/assets/css/style.css">
     <link rel="stylesheet" href="./src/assets/css/aos.css">
-    <link rel="stylesheet" href="./src/assets/css/footer.css">
+    <link rel="stylesheet" href="./src/assets/css/components/footer.css">
+    <link rel="stylesheet" href="./src/assets/css/components/navbar.css">
 
 </head>
 
@@ -272,7 +273,9 @@
 
         <!-- Planos -->
         <section id="Planos" class="container my-5">
-            <h2 data-aos="fade-top" class="text-center mb-4">✨ Nossos Planos ✨</h2>
+            <h1 data-aos="fade-top" class="text-center mb-4"
+                style="color: #000000; font-size: 3rem; font-weight: 700; text-shadow: 2px 2px 4px rgba(0,0,0,0.2);">
+                Nossos Planos </h1>
             <div class="row justify-content-center">
 
                 <!-- Dados dos planos -->
@@ -480,31 +483,51 @@
                 </div>
             </div>
         </section>
-        
+
         <div class="space"></div>
 
         <section class="etapas-funerario py-5">
             <div class="container">
-                <h6 data-aos="fade-top" class="text-uppercase text-warning fw-bold mb-2" style="letter-spacing: 2px;">
-                    Confira as etapas do
-                </h6>
-                <h2 data-aos="fade-top" class="text-white fw-bold mb-4">
-                    Atendimento Funerário <br> Personalizado
-                </h2>
-                <p data-aos="fade-right" class="text-white mb-5" style="max-width: 700px;">
-                    A WG realiza um atendimento cuidadoso e completo, desde o primeiro contato com a família até a
-                    organização da cerimônia.
-                    <br><br>
-                    O processo inclui a preparação da documentação, remoção e preparação do corpo, além da organização
-                    de todos os detalhes relacionados ao funeral, com respeito e atenção a cada etapa necessária.
-                </p>
+                <div class="row align-items-center">
+                    <!-- Coluna de Texto -->
+                    <div class="col-lg-6">
+                        <h6 data-aos="fade-top" class="text-uppercase text-warning fw-bold mb-2"
+                            style="letter-spacing: 2px;">
+                            Confira as etapas do
+                        </h6>
+                        <h2 data-aos="fade-top" class="text-white fw-bold mb-4">
+                            Atendimento Funerário <br> Personalizado
+                        </h2>
+                        <p data-aos="fade-right" class="text-white mb-5">
+                            A WG realiza um atendimento cuidadoso e completo, desde o primeiro contato com a família até
+                            a
+                            organização da cerimônia.
+                            <br><br>
+                            O processo inclui a preparação da documentação, remoção e preparação do corpo, além da
+                            organização
+                            de todos os detalhes relacionados ao funeral, com respeito e atenção a cada etapa
+                            necessária.
+                        </p>
+                    </div>
+
+                    <!-- Coluna da Imagem -->
+                    <div class="col-lg-6">
+                        <div class="text-center">
+                            <img src="./src/assets/img/imagens familia/pexels-vlada-karpovich-4609093.jpg"
+                                alt="Atendimento Personalizado" class="img-fluid rounded shadow"
+                                style="max-width: 100%; height: auto;">
+                        </div>
+                    </div>
+                </div>
 
                 <!-- Etapas -->
-                <div class="row gy-5">
+                <div class="row gy-5 mt-5">
                     <!-- Etapa 1 -->
                     <div class="col-md-4">
                         <div class="etapa">
-                            <div data-aos="fade-top" class="numero">01</div>
+                            <div data-aos="fade-top" class="numero">
+                                <i class="fas fa-users text-warning me-2"></i>01
+                            </div>
                             <h5 class="text-white fw-bold">Primeiro atendimento à família</h5>
                             <p class="text-white">
                                 Circunstância do óbito, documentações, liberação e destino do corpo, etc.
@@ -515,7 +538,9 @@
                     <!-- Etapa 2 -->
                     <div class="col-md-4">
                         <div class="etapa">
-                            <div data-aos="fade-top" class="numero">02</div>
+                            <div data-aos="fade-top" class="numero">
+                                <i class="fas fa-file-alt text-warning me-2"></i>02
+                            </div>
                             <h5 class="text-white fw-bold">Preparo da documentação</h5>
                             <p class="text-white">
                                 Declaração de óbito, notas e ordens de serviço, documentação para traslados ou cremação
@@ -527,7 +552,9 @@
                     <!-- Etapa 3 -->
                     <div class="col-md-4">
                         <div class="etapa">
-                            <div data-aos="fade-top" class="numero">03</div>
+                            <div data-aos="fade-top" class="numero">
+                                <i class="fas fa-church text-warning me-2"></i>03
+                            </div>
                             <h5 class="text-white fw-bold">Preparo do funeral</h5>
                             <p class="text-white">
                                 Sugestão de serviços e locais, cerimônia religiosa (quando solicitado), etc.
@@ -538,7 +565,9 @@
                     <!-- Etapa 4 -->
                     <div class="col-md-4">
                         <div class="etapa">
-                            <div data-aos="fade-top" class="numero">04</div>
+                            <div data-aos="fade-top" class="numero">
+                                <i class="fas fa-ambulance text-warning me-2"></i>04
+                            </div>
                             <h5 class="text-white fw-bold">Remoção do corpo</h5>
                             <p class="text-white">
                                 Local do velório e para sepultamento. Remoção do corpo para o sepultamento.
@@ -549,7 +578,9 @@
                     <!-- Etapa 5 -->
                     <div class="col-md-4">
                         <div class="etapa">
-                            <div data-aos="fade-top" class="numero">05</div>
+                            <div data-aos="fade-top" class="numero">
+                                <i class="fas fa-spa text-warning me-2"></i>05
+                            </div>
                             <h5 class="text-white fw-bold">Preparação do corpo</h5>
                             <p class="text-white">
                                 Avaliação do estado (técnica), higienização, necromaquiagem, vestimenta, ornamentação da
@@ -561,7 +592,9 @@
                     <!-- Etapa 6 -->
                     <div class="col-md-4">
                         <div class="etapa">
-                            <div data-aos="fade-top" class="numero">06</div>
+                            <div data-aos="fade-top" class="numero">
+                                <i class="fas fa-calendar-check text-warning me-2"></i>06
+                            </div>
                             <h5 class="text-white fw-bold">Organização cerimonial</h5>
                             <p class="text-white">
                                 Preparação do local, confirmação da documentação junto ao cemitério, condução do
@@ -584,40 +617,94 @@
                     <!-- Empréstimo de Equipamentos -->
                     <div class="col-md-6 col-lg-4">
                         <div data-aos="fade-top" class="card h-100 border-0 shadow-sm">
+                            <img src="./src/assets/img/imagens familia/pexels-beyza-cebeci-2152351793-32155041.jpg"
+                                class="card-img-top" alt="Equipamentos Ortopédicos">
                             <div class="card-body text-center">
                                 <i class="fas fa-wheelchair fa-3x text-primary mb-3"></i>
                                 <h5 class="card-title">Empréstimo de Equipamentos</h5>
                                 <p class="card-text">
-                                    Disponibilizamos equipamentos ortopédicos como cadeiras de rodas, muletas,
-                                    bengalas e outros itens necessários para sua recuperação.
+                                    Oferecemos cadeiras de rodas, andadores, muletas, camas hospitalares e outros
+                                    equipamentos ortopédicos para auxiliar sua recuperação ou bem-estar temporário.
                                 </p>
                             </div>
                         </div>
                     </div>
 
-                    <!-- Serviço de Ambulância -->
+                    <!-- Transporte Especializado -->
                     <div class="col-md-6 col-lg-4">
                         <div data-aos="fade-top" class="card h-100 border-0 shadow-sm">
+                            <img src="./src/assets/img/imagens familia/pexels-emma-bauso-1183828-2253879.jpg"
+                                class="card-img-top" alt="Serviço de Ambulância">
                             <div class="card-body text-center">
                                 <i class="fas fa-ambulance fa-3x text-primary mb-3"></i>
                                 <h5 class="card-title">Transporte Especializado</h5>
                                 <p class="card-text">
-                                    Serviço de ambulância com hora marcada para consultas e exames,
-                                    oferecendo conforto e segurança no deslocamento.
+                                    Serviço de ambulância ou transporte adaptado com agendamento prévio, proporcionando
+                                    conforto e segurança em situações de consultas, exames ou emergências controladas.
                                 </p>
                             </div>
                         </div>
                     </div>
 
-                    <!-- Descontos Especiais -->
+                    <!-- Descontos Exclusivos -->
                     <div class="col-md-6 col-lg-4">
                         <div data-aos="fade-top" class="card h-100 border-0 shadow-sm">
+                            <img src="./src/assets/img/imagens familia/pexels-yankrukov-5792901.jpg"
+                                class="card-img-top" alt="Descontos Especiais">
                             <div class="card-body text-center">
                                 <i class="fas fa-percent fa-3x text-primary mb-3"></i>
                                 <h5 class="card-title">Descontos Exclusivos</h5>
                                 <p class="card-text">
-                                    Acesso a descontos especiais em clínicas, profissionais liberais,
-                                    laboratórios e estabelecimentos comerciais parceiros.
+                                    Tenha acesso a descontos especiais em farmácias, óticas, laboratórios, clínicas
+                                    médicas, fisioterapia, psicologia e parceiros do comércio local.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Apoio Psicológico -->
+                    <div class="col-md-6 col-lg-4">
+                        <div data-aos="fade-top" class="card h-100 border-0 shadow-sm">
+                            <img src="./src/assets/img/imagens familia/2.jpg" class="card-img-top"
+                                alt="Apoio Psicológico">
+                            <div class="card-body text-center">
+                                <i class="fas fa-brain fa-3x text-primary mb-3"></i>
+                                <h5 class="card-title">Apoio Psicológico</h5>
+                                <p class="card-text">
+                                    Atendimento psicológico com profissionais qualificados, oferecendo suporte emocional
+                                    em momentos de dificuldade ou luto.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Assistência Domiciliar -->
+                    <div class="col-md-6 col-lg-4">
+                        <div data-aos="fade-top" class="card h-100 border-0 shadow-sm">
+                            <img src="./src/assets/img/imagens familia/pexels-yankrukov-5793919.jpg"
+                                class="card-img-top" alt="Assistência Domiciliar">
+                            <div class="card-body text-center">
+                                <i class="fas fa-home fa-3x text-primary mb-3"></i>
+                                <h5 class="card-title">Assistência Domiciliar</h5>
+                                <p class="card-text">
+                                    Contamos com profissionais especializados que podem auxiliar em curativos, cuidados
+                                    paliativos e suporte básico na sua residência.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Consultoria e Orientação -->
+                    <div class="col-md-6 col-lg-4">
+                        <div data-aos="fade-top" class="card h-100 border-0 shadow-sm">
+                            <img src="./src/assets/img/imagens familia/pexels-cottonbro-7232037.jpg"
+                                class="card-img-top" alt="Consultoria e Orientação">
+                            <div class="card-body text-center">
+                                <i class="fas fa-handshake fa-3x text-primary mb-3"></i>
+                                <h5 class="card-title">Consultoria e Orientação</h5>
+                                <p class="card-text">
+                                    Oferecemos orientação sobre processos de aposentadoria, benefícios, direitos do
+                                    idoso e suporte burocrático, tudo com atendimento humanizado.
                                 </p>
                             </div>
                         </div>
@@ -626,49 +713,93 @@
             </div>
         </section>
 
-        <section id="contrate-agora" class="py-5"
-            style="background: linear-gradient(135deg, #003366 0%, #0039b4 100%);">
+
+        <section id="contrate-agora" class="cta-section">
             <div class="container">
                 <div class="row align-items-center">
                     <!-- Texto e Call to Action -->
                     <div class="col-lg-6 text-white mb-5 mb-lg-0">
-                        <h2 data-aos="fade-right" class="display-4 fw-bold mb-3">
-                            <span class="fw-light">CONTRATE</span><br>
-                            <strong>AGORA MESMO</strong>
+                        <h2 data-aos="fade-right" class="cta-title">
+                            <span class="fw-light text-uppercase">Contrate</span><br>
+                            <strong class="text-warning">AGORA MESMO!</strong>
                         </h2>
-                        <p class="lead mb-4">
-                            Proteja sua família com um dos melhores planos funerários da região.<br>
-                            Preencha o formulário e nossa equipe entrará em contato para finalizar sua contratação.
+                        <p class="cta-subtitle">
+                            Garanta a proteção completa e a tranquilidade que sua família merece com a <strong>WG
+                                Convênios Funerários</strong>, referência há mais de 30 anos no mercado.
                         </p>
-                        <ul class="list-unstyled mb-4">
-                            <li class="mb-3 d-flex align-items-center">
-                                <i class="fas fa-check-circle text-warning me-3 fs-5"></i>
-                                Atendimento personalizado
-                            </li>
-                            <li class="mb-3 d-flex align-items-center">
-                                <i class="fas fa-check-circle text-warning me-3 fs-5"></i>
-                                Planos a partir de <strong>R$ 40,00</strong>!
-                            </li>
-                            <li class="mb-3 d-flex align-items-center">
-                                <i class="fas fa-check-circle text-warning me-3 fs-5"></i>
-                                Cobertura em toda região
-                            </li>
+                        <p class="cta-description">
+                            Com planos acessíveis, atendimento personalizado e cobertura ampla, oferecemos suporte total
+                            para que você e seus entes queridos estejam sempre amparados, sem surpresas e com
+                            transparência.
+                        </p>
+                        <ul class="cta-list">
+                            <li><i class="fas fa-check-circle text-warning me-3"></i> Atendimento humano e consultoria
+                                especializada</li>
+                            <li><i class="fas fa-check-circle text-warning me-3"></i> Planos a partir de ㅤ<strong>R$
+                                    40,00</strong>ㅤmensais</li>
+                            <li><i class="fas fa-check-circle text-warning me-3"></i> Cobertura em mais de ㅤ<strong>50
+                                    cidades!</strong></li>
+                            <li><i class="fas fa-check-circle text-warning me-3"></i> Benefícios como descontos em
+                                farmácias e clínicas</li>
+                            <li><i class="fas fa-check-circle text-warning me-3"></i> Empréstimo de equipamentos para
+                                convalescentes</li>
                         </ul>
-                        <a data-aos="fade-top" href="./src/pages/formulario.html"
-                            class="btn btn-warning btn-lg px-5 py-3 fw-bold shadow-sm">
-                            <i class="fas fa-file-signature me-2"></i>
-                            CONTRATAR AGORA
+                        <p class="cta-description">
+                            Não deixe para depois o que pode garantir agora. Preencha o formulário e um consultor
+                            entrará em contato.
+                        </p>
+                        <a data-aos="fade-up" href="./src/pages/formulario.html" class="btn btn-warning btn-lg cta-btn">
+                            <i class="fas fa-file-signature me-2"></i> CONTRATAR AGORA
                         </a>
                     </div>
 
-                    <!-- Imagem com ícone -->
+                    <!-- Imagem -->
                     <div class="col-lg-6">
-                        <div class="position-relative rounded-3 shadow-lg overflow-hidden">
+                        <div class="cta-image-wrapper">
                             <img data-aos="fade-top" src="./src/assets/img/imagens familia/pexels-cottonbro-6667307.jpg"
-                                alt="Família protegida" class="img-fluid w-100" loading="lazy" />
-                            <div class="position-absolute top-0 end-0 bg-warning text-dark p-3 rounded-circle m-4 shadow"
-                                style="transform: translate(25%, -25%);">
-                                <i class="fas fa-shield-alt fa-3x"></i>
+                                alt="Família protegida" class="img-fluid">
+                            <div class="cta-icon">
+                                <i class="fas fa-shield-alt fa-2x"></i>
+                            </div>
+                        </div>
+                        <br>
+                        <!-- Cards -->
+                        <div class="row g-3">
+                            <div class="col-6" data-aos="fade-up" data-aos-delay="100">
+                                <div class="cta-card">
+                                    <i class="fas fa-headset text-warning fs-3 me-3"></i>
+                                    <div>
+                                        <h6>Suporte 24/7</h6>
+                                        Atendimento sempre que precisar.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6" data-aos="fade-up" data-aos-delay="200">
+                                <div class="cta-card">
+                                    <i class="fas fa-dollar-sign text-warning fs-3 me-3"></i>
+                                    <div>
+                                        <h6>Planos Acessíveis</h6>
+                                        Proteção a partir de ㅤ<strong>R$ 40,00</strong>ㅤmensais.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6" data-aos="fade-up" data-aos-delay="300">
+                                <div class="cta-card">
+                                    <i class="fas fa-map-marker-alt text-warning fs-3 me-3"></i>
+                                    <div>
+                                        <h6>Cobertura Regional</h6>
+                                        Mais de 50 cidades atendidas.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6" data-aos="fade-up" data-aos-delay="400">
+                                <div class="cta-card">
+                                    <i class="fas fa-gift text-warning fs-3 me-3"></i>
+                                    <div>
+                                        <h6>Benefícios</h6>
+                                        Descontos com parceiros e serviços.
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -768,7 +899,7 @@
                     <option value="">Selecione...</option>
                     <option value="Plano Bronze - R$ 40,00/mês">Plano Bronze - R$ 40,00/mês</option>
                     <option value="Plano Prata - R$ 60,00/mês">Plano Prata - R$ 60,00/mês</option>
-                    <option value="Plano Ouro - R$ 120,00/mês">Plano Ouro - R$ 120,00/mês</option>
+                    <option value="Plano Ouro - R$ 900,00/mês">Plano Ouro - R$ 900,00/mês</option>
                 </select>
                 <button onclick="nextStep()"
                     style="padding:10px 20px; border:none; background:#0020af; color:white; border-radius:20px; cursor:pointer;">Próximo</button>
@@ -796,7 +927,6 @@
                         style="padding:10px 20px; border:none; background:#0020af; color:white; border-radius:20px; cursor:pointer;">Enviar</button>
                 </div>
             </div>
-
         </div>
 
     </section>

@@ -11,48 +11,79 @@
 /* Estilos Base */
 body {
   font-family: 'Poppins', sans-serif;
+  font-size: 16px;
   background: var(--light);
   color: #000;
-}
-
-/* Navbar */
-.navbar {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  padding: 10px 0;
-  background: var(--light);
-  z-index: 1000;
-  transition: var(--transition);
-}
-
-.navbar-nav .nav-link {
-  font-size: 18px;
-  font-weight: 500;
-  padding: 8px 15px;
-  color: var(--dark);
-  transition: var(--transition);
-}
-
-.navbar-nav .nav-link:hover {
-  color: var(--primary);
-}
-
-.navbar-toggler {
-  border: none;
 }
 
 /* Hero Section */
 .hero {
   height: 100vh;
-  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-    url('../img/hero.png') center/cover no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url('../img/hero.png') center/cover no-repeat fixed;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0 20px;
 }
 
-.hero h1,
-.hero p {
+.hero h1 {
   color: var(--light);
+  font-size: 4rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  animation: fadeInDown 1s ease-out;
 }
+
+.hero h2 {
+  color: var(--light);
+  font-size: 2rem;
+  font-weight: 400;
+  margin-bottom: 2rem;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+  animation: fadeInUp 1s ease-out;
+}
+
+.hero .btn {
+  padding: 12px 30px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  border-radius: 50px;
+  transition: all 0.3s ease;
+  animation: fadeInUp 1.2s ease-out;
+}
+
+.hero .btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
 
 /* Cards */
 .card-img {
@@ -86,7 +117,7 @@ body {
 }
 
 .etapa .numero {
-  font-size: 50px;
+  font-size: 55px;
   color: #b07b4a;
   font-weight: 700;
   margin-bottom: 10px;
@@ -122,7 +153,7 @@ body {
   align-items: center;
   justify-content: center;
   font-weight: bold;
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   transition: var(--transition);
   box-shadow: var(--shadow);
   border: 3px solid transparent;
@@ -171,7 +202,7 @@ body {
   cursor: pointer;
   padding: 18px;
   text-align: left;
-  font-size: 16px;
+  font-size: 18px;
   border: none;
   outline: none;
   transition: var(--transition);
@@ -207,7 +238,7 @@ body {
   padding: 0 18px 18px;
   margin: 0;
   color: #333;
-  font-size: 15px;
+  font-size: 16px;
 }
 
 .space {
@@ -238,7 +269,7 @@ body {
 }
 
 .benefit-item i {
-  font-size: 42px;
+  font-size: 45px;
   color: #0077b6;
   background: #e0f4ff;
   padding: 16px;
@@ -246,7 +277,7 @@ body {
 }
 
 .benefit-text {
-  font-size: 14.5px;
+  font-size: 16px;
   color: #333;
   margin-top: 12px;
 }
@@ -314,3 +345,140 @@ body {
   transform: scale(1.05);
   box-shadow: 0 0 15px rgba(255, 193, 7, 0.8);
 }
+
+/* Seção CTA */
+.cta-section {
+  padding: 6rem 0;
+  background: linear-gradient(135deg, #001F3F 0%, #0074D9 100%);
+  color: #fff;
+}
+
+.cta-title {
+  font-size: 3rem;
+  line-height: 1.2;
+  margin-bottom: 1.5rem;
+  font-weight: 700;
+}
+
+.cta-subtitle {
+  font-size: 1.3rem;
+  line-height: 1.7;
+  margin-bottom: 1rem;
+  opacity: 0.9;
+}
+
+.cta-description {
+  font-size: 1.15rem;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+  opacity: 0.95;
+}
+
+.cta-list {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 2rem;
+}
+
+.cta-list li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+}
+
+.cta-list i {
+  color: #FFD700;
+  margin-right: 0.8rem;
+  font-size: 1.3rem;
+}
+
+/* Botão CTA */
+.cta-btn {
+  background-color: #FFD700;
+  color: #001F3F;
+  padding: 0.9rem 2.5rem;
+  font-weight: 700;
+  border-radius: 50px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.cta-btn:hover {
+  background-color: #FFC300;
+  transform: translateY(-4px);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.4);
+}
+
+/* Imagem */
+.cta-image-wrapper {
+  position: relative;
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+}
+
+.cta-image-wrapper img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.cta-icon {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: #FFD700;
+  color: #001F3F;
+  padding: 1rem;
+  border-radius: 50%;
+  transform: translate(25%, -25%);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+}
+
+/* Cards */
+.cta-card {
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(12px);
+  border-radius: 0.9rem;
+  padding: 1.2rem;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cta-card h6 {
+  margin-bottom: 0.3rem;
+  color: #FFD700;
+  font-weight: 700;
+}
+
+.cta-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.35);
+}
+
+.cta-card i {
+  color: #FFD700;
+  font-size: 1.8rem;
+  margin-right: 0.9rem;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .cta-title {
+    font-size: 2.4rem;
+  }
+
+  .cta-subtitle, 
+  .cta-description {
+    font-size: 1rem;
+  }
+
+  .cta-btn {
+    padding: 0.8rem 2rem;
+  }
+}
+
