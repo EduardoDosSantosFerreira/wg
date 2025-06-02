@@ -16,6 +16,12 @@ body {
   color: #000;
 }
 
+@media (max-width: 500px) {
+  body {
+    margin-top: 150px;
+  }
+}
+
 /* Hero Section */
 .hero {
   height: 100vh;
@@ -82,8 +88,6 @@ body {
     transform: translateY(0);
   }
 }
-
-
 
 /* Cards */
 .card-img {
