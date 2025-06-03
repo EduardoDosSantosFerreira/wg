@@ -433,51 +433,6 @@ body {
   object-fit: cover;
 }
 
-/* Cards */
-.cta-card {
-  background: rgba(255, 255, 255, 0.08);
-  backdrop-filter: blur(12px);
-  border-radius: 0.9rem;
-  padding: 1.2rem;
-  display: flex;
-  align-items: center;
-  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.cta-card h6 {
-  margin-bottom: 0.3rem;
-  color: #FFD700;
-  font-weight: 700;
-}
-
-.cta-card:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.35);
-}
-
-.cta-card i {
-  color: #FFD700;
-  font-size: 1.8rem;
-  margin-right: 0.9rem;
-}
-
-/* Responsivo */
-@media (max-width: 768px) {
-  .cta-title {
-    font-size: 2.4rem;
-  }
-
-  .cta-subtitle, 
-  .cta-description {
-    font-size: 1rem;
-  }
-
-  .cta-btn {
-    padding: 0.8rem 2rem;
-  }
-}
-
 /* Loader */
 #loader {
   position: fixed;
