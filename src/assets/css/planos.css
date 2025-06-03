@@ -152,7 +152,6 @@ header h1 {
     box-shadow: 0 0 0 3px rgba(0, 51, 102, 0.7);
 }
 
-
 .coverage {
     background-color: #fff;
     padding: 40px 20px;
@@ -384,7 +383,6 @@ footer {
     border: 2px solid #ffd700;
     background: linear-gradient(135deg, #fff9d6, #fffbea);
 }
-
 
 /* Modal fundo */
 .modal-overlay {
